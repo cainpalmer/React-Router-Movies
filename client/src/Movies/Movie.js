@@ -1,7 +1,10 @@
+
+// Imports
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import {useParams} from 'react-router-dom';
 
+// Movie
 export default function Movie(props) {
   const [movie, setMovie] = useState();
 
@@ -32,6 +35,7 @@ export default function Movie(props) {
 
   const { title, director, metascore, stars } = movie;
 
+  // Returns
   return (
     <div className="save-wrapper">
       <div className="movie-card">

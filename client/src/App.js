@@ -1,3 +1,5 @@
+
+// Imports
 import React, { useState, useEffect } from 'react';
 import {BrowserRouter as Route, Switch} from 'react-router-dom';
 import axios from 'axios';
@@ -7,6 +9,7 @@ import SavedList from './Movies/SavedList';
 import Movie from './Movies/Movie';
 import MovieList from './Movies/MovieList';
 
+// App
 export default function App () {
   const [saved, setSaved] = useState([]); // Stretch: the ids of "saved" movies
   const [movieList, setMovieList] = useState([]);
@@ -31,6 +34,7 @@ export default function App () {
     // This is stretch. Prevent the same movie from being "saved" more than once
   };
 
+  // Returns
   return (
     <div>
       <SavedList list={[ /* This is stretch */]} />

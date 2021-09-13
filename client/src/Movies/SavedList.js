@@ -1,6 +1,9 @@
+
+// Imports
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+// SavedList  
 export default function SavedList(props) {
   return (
     <div className="saved-list">
